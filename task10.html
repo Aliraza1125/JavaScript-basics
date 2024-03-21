@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First Number:</h1>
+    <input type="text" id="firstnum">
+    <h1>Second Number:</h1>
+    <input type="text" id="secondnum">
+
+    <button onclick="handleMultiply()">Multiply</button>
+    <button onclick="handleDivide()">Divide</button>
+
+    <script>
+        function handleMultiply(){
+            let firstnum = parseFloat(document.getElementById("firstnum").value);
+            let secondnum = parseFloat(document.getElementById("secondnum").value);
+            console.log(firstnum * secondnum);
+        }
+
+        function handleDivide(){
+            let firstnum = parseFloat(document.getElementById("firstnum").value);
+            let secondnum = parseFloat(document.getElementById("secondnum").value);
+            if (secondnum !== 0) {
+                console.log(firstnum / secondnum);
+            } else {
+                console.log("Cannot divide by zero");
+            }
+        }
+    </script>
+</body>
+</html>
