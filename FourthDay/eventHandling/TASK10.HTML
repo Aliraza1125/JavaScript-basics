@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Double Click Event</title>
+</head>
+<body>
+
+<button id="doubleClickButton">Double Click Me</button>
+
+<script>
+function handleDoubleClick() {
+  alert("Element double-clicked!");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  var doubleClickButton = document.getElementById("doubleClickButton");
+
+  doubleClickButton.addEventListener("dblclick", handleDoubleClick);
+});
+</script>
+
+</body>
+</html>
